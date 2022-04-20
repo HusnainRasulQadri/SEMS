@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="552.0" prefWidth="509.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="frontendLayer.menuAdmin">
+    <children>
+        <Label alignment="CENTER" contentDisplay="TOP" layoutX="171.0" layoutY="4.0" prefHeight="35.0" prefWidth="170.0" text="Menu" textFill="#fafafa">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <Pane layoutX="11.0" layoutY="41.0" prefHeight="491.0" prefWidth="489.0" styleClass="mainPane" stylesheets="@application.css">
+            <children>
+            <Pane fx:id="logout" layoutX="331.0" layoutY="291.0" onMouseClicked="#logout" prefHeight="103.0" prefWidth="94.0" styleClass="highlight" stylesheets="@application.css">
+               <children>
+                  <ImageView fx:id="closeButton1" fitHeight="132.0" fitWidth="77.0" layoutX="9.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@logout.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Label alignment="CENTER" contentDisplay="TOP" layoutX="331.0" layoutY="405.0" prefHeight="35.0" prefWidth="94.0" text="Log Out" textFill="#fafafa">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Pane layoutX="51.0" layoutY="50.0" onMouseClicked="#updateProfile" prefHeight="103.0" prefWidth="94.0" styleClass="highlight" stylesheets="@application.css">
+               <children>
+                  <ImageView fx:id="closeButton11" fitHeight="132.0" fitWidth="77.0" layoutX="9.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@profile.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="198.0" layoutY="50.0" onMouseClicked="#updateCredentials" prefHeight="103.0" prefWidth="94.0" styleClass="highlight" stylesheets="@application.css">
+               <children>
+                  <ImageView fx:id="closeButton111" fitHeight="132.0" fitWidth="77.0" layoutX="9.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@credential.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Label alignment="CENTER" contentDisplay="TOP" layoutX="32.0" layoutY="172.0" prefHeight="35.0" prefWidth="132.0" text="Update Profile" textFill="#fafafa">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="TOP" layoutX="198.0" layoutY="159.0" prefHeight="62.0" prefWidth="94.0" text="Update Credentials" textAlignment="CENTER" textFill="#fafafa" wrapText="true">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Pane layoutX="338.0" layoutY="50.0" onMouseClicked="#addSportEquipment" prefHeight="103.0" prefWidth="94.0" styleClass="highlight" stylesheets="@application.css">
+               <children>
+                  <ImageView fx:id="closeButton1111" fitHeight="132.0" fitWidth="77.0" layoutX="9.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@credential.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Label alignment="CENTER" contentDisplay="TOP" layoutX="338.0" layoutY="159.0" prefHeight="62.0" prefWidth="94.0" text="Add Sport Equipment" textAlignment="CENTER" textFill="#fafafa" wrapText="true">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Pane layoutX="51.0" layoutY="291.0" onMouseClicked="#removeSportEquipment" prefHeight="103.0" prefWidth="94.0" styleClass="highlight" stylesheets="@application.css">
+               <children>
+                  <ImageView fx:id="closeButton11111" fitHeight="132.0" fitWidth="77.0" layoutX="9.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@credential.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Label alignment="CENTER" contentDisplay="TOP" layoutX="51.0" layoutY="400.0" prefHeight="84.0" prefWidth="94.0" text="Remove Sport Equipment" textAlignment="CENTER" textFill="#fafafa" wrapText="true">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            </children>
+        </Pane>
+        <ImageView fx:id="closeButton" fitHeight="47.0" fitWidth="26.0" layoutX="450.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@close.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="minimizeButton" fitHeight="47.0" fitWidth="26.0" layoutX="420.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@hide.png" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>
